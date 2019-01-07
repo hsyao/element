@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import App from './App.vue'
+
+import './components/theme/index.css'
+import Navi from './components/Navi/Navi'
+
 
 Vue.use(ElementUI)
 
 new Vue({
-  el: '#app',
-  render: h => h(App)
+    el: '#app',
+    render: h => h(Navi)
 })
